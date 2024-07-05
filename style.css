@@ -1,0 +1,121 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #060303;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+    text-align: center;
+}
+#profiles-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.profile-card {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    padding: 20px;
+    margin: 10px;
+    width: calc(20% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    overflow :hidden;
+    border-radius: 10px;
+}
+.profile-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+.profile-card h3{
+    margin: 0 0 10px;
+    word-wrap: break-word;
+    
+}
+.profile-card p {
+    font-size: 12px;
+    word-wrap: break-word;
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+thead {
+    background: #a6a2a29b;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #a6a2a29b;
+    color:white;
+    border-radius: 10px;
+    border-color:#a6a2a29b;
+
+}
+@media (max-width: 1200px) {
+    .profile-card {
+        width: calc(33.33% - 20px);
+    }
+}
+@media (max-width: 992px) {
+    .profile-card {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 768px) {
+    .profile-card {
+        width: calc(100% - 20px);
+    }
+    .container {
+        padding: 100px;
+    }
+    button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        margin: 20px auto;
+    }
+    .profile-card {
+        padding: 10px;
+    }
+    th, td {
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
